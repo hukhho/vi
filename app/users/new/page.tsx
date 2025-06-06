@@ -238,12 +238,12 @@ export default function BulkGetDepositAddress() {
           const depositAddress = res.data.data.address;
           console.log(`Deposit Address for ${userId}:`, depositAddress);
 
-          // ✅ Save user details to Prisma
-          await axios.post("/api/save-user", {
-            userId,
-            assetUSDT: "", // Default USDT balance
-            address: depositAddress,
-          });
+          // // ✅ Save user details to Prisma
+          // await axios.post("/api/save-user", {
+          //   userId,
+          //   assetUSDT: "", // Default USDT balance
+          //   address: depositAddress,
+          // });
 
           results.push({ userId, address: depositAddress, status: "Success" });
         } catch (err: any) {
