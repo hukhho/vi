@@ -412,14 +412,18 @@ export default function Home() {
   const [loadingBalances, setLoadingBalances] = useState(false);
   const [error, setError] = useState("");
   const [inputText, setInputText] = useState("");
+  //BINANCE
   const BASE_ADDRESS = "0x5fbcf1a5d3eade2cece981af9a0c528de38af7de";
+
+  //BING_X
+  // const BASE_ADDRESS = "0xeacb1948906d996acb61a2d2ff71860605539f40";
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (inputText.trim() !== "") {
         handleSubmit();
       }
-    }, 30_000); // 30 seconds
+    }, 60_000); // 5 mins  seconds
 
     return () => clearInterval(interval); // Clean up when unmounted
   }, [inputText]);
