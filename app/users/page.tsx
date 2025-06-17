@@ -413,7 +413,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const [inputText, setInputText] = useState("");
   //BINANCE
-  const BASE_ADDRESS = "0x5fbcf1a5d3eade2cece981af9a0c528de38af7de";
+  const BASE_ADDRESS = "0x9e2d205ea1b27374114cb930669db868aaaa0260";
 
   //BING_X
   // const BASE_ADDRESS = "0xeacb1948906d996acb61a2d2ff71860605539f40";
